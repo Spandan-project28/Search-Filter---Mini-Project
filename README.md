@@ -31,7 +31,6 @@ Search Filter/
 │   ├── index.html.html  # Main entry point
 │   ├── style.css        # Premium styling
 │   └── script.js       # Filtering logic
-├── .gitignore          # Git exclusion rules
 └── README.md           # Project documentation
 ```
 
