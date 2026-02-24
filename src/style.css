@@ -1,0 +1,176 @@
+ *{
+            margin: 0;
+            padding: 0;
+
+        }
+        #main{
+            user-select: none;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(6, 6, 6);
+        }
+
+        #searchbox{
+            height: 100px;
+            width:300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #searchContainer{
+            height: 30px;
+            width: 250px;
+            border-radius: 20px;
+            background-color: aliceblue;
+            border: 2px solid azure;
+            flex-grow: 10px;
+        }
+        #searchContainer:hover{
+            width: 255px;
+        }
+        .searchbar{
+
+            height: 26px;
+            width: 215px;
+            border: 0;
+            border-radius: 20px;
+            background-color: aliceblue;
+            position: relative;
+            left: 2px;
+            top: 2px;
+            
+        }
+        
+        #search{
+            height: 30px;
+            width: 30px;
+            background-color: rgb(19, 189, 133);
+            border-radius: 50%;
+            position: relative;
+            float: right;
+            display:flex ;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #search:hover{
+            background-color:  rgb(15, 164, 115);
+            box-shadow: 0px 2px 10px rgba(2, 254, 170, 0.897) ;
+        }
+        
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  color: azure;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+
+}
+
+#title{
+    height: 100px;
+    width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+
+
+}
+.alfa-slab-one-regular {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: azure;
+  letter-spacing: 0.3px;
+  font-size: 30px;
+  text-shadow: 0px 6px 25px rgba(161, 154, 154, 0.71);
+}
+#collection{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    
+}
+.addcard{
+    height: 200px;
+    width: 150px;
+    background-color: rgb(145, 102, 46);
+    border-radius: 10px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 20px rgb(101, 93, 93);
+
+    
+    
+}
+
+.card{
+    height: 230px;
+    width: 170px;
+    background-color: rgb(145, 102, 46);
+    border-radius: 10px;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 1px 20px rgb(101, 93, 93);
+
+    
+    
+}
+.card:hover{
+
+    height: 245px;
+    width: 185px;
+    z-index: 3;
+}
+
+#allCards{
+    position: relative;
+display: flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+    align-items: center;
+   
+}
+.cardname{
+
+    height: 20%;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgba(240 248, 255, 0.181);
+    text-align: center;
+    font-weight: 800;
+    font-size: large;
+    color: azure;
+    text-shadow: -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+;
+    
+
+}
