@@ -3,6 +3,8 @@ let search=document.querySelector("#search");
 let searchbar= document.querySelector(".searchbar");
 let add=document.querySelector(".addcard");
 let cardSpace=document.querySelector("#collection");
+let newWindow=document.querySelector("#newWindow");
+
 
 //people array
 
@@ -16,9 +18,15 @@ let peoples=[
 
     {
         name: "Rohan Shikhar", image:"https://4kwallpapers.com/images/walls/thumbs_3t/17655.jpg" 
+    },
+
+    {
+        name: "Souvik Bhattacharya", image:"https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=1143&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+    },
+
+    {
+        name: "Saaj", image:"https://images.unsplash.com/photo-1561928297-8ddd5d1eb54b?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
     }
-
-
 
 ];
 
@@ -59,6 +67,8 @@ console.log(searchbar.value);
     return people.name.toLocaleLowerCase().includes(user);
    })
 
+   if(matchFound!=""){
+
    //execution
    allCards.replaceChildren();
    add.style.display="none";
@@ -74,19 +84,31 @@ console.log(searchbar.value);
         div2.textContent= match.name;
         matchCard.appendChild(div2);
    }
-   //match found text
- let foundText=document.createElement("div");
-   foundText.style.color="white";
-    foundText.textContent="Match Found!"
-    main.appendChild(foundText);
-   
+}else{
+    allCards.replaceChildren();
+    let errorText=document.createElement("div");
+    errorText.innerHTML="<b>NO MATCH FOUND!<b>";
+    errorText.style.color="white";
+    allCards.appendChild(errorText);
+
+}  
 };
 
+//2 event listeners
 
-
-
-
-search.addEventListener("click",()=>{
+searchbar.addEventListener("change",()=>{
     
 searchPeople();
+
+
 });
+
+search.addEventListener("click",()=>{
+    searchPeople();
+})
+
+//progress.......
+add.addEventListener("click",()=>{
+    newWindow.setAttribute("href","addCard.html");
+});
+

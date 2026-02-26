@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Crads</title>
+    <link rel="stylesheet" href="addCard.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <style>
+    *{
+            margin: 0;
+            padding: 0;
+
+        }
+
+    .alfa-slab-one-regular {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: azure;
+  letter-spacing: 0.3px;
+  font-size: 20px;
+  text-shadow: 0px 6px 25px rgba(161, 154, 154, 0.71);
+}
+
+
+ #main{
+            user-select: none;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(6, 6, 6);
+            color: aliceblue;
+        }
+
+#nameBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+    margin-top: 100px;
+    
+}
+#linkBox{
+    display: flex;
+    flex-direction: column;
+margin-top: 25px;
+}
+
+#submitBox{
+      display: flex;
+    justify-content: center;
+margin-top: 80px;
+}
+
+.inp{
+    width: 300px;
+    height: 30px;
+    border-radius: 220px;
+}
+.inp:hover{
+    box-sizing: border-box;
+    border: 4px solid rgb(141, 22, 78);
+}
+
+.submit{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 2px;
+    border: 2px solid black;
+    color: black;
+    
+}
+
+.submit:hover{
+    border: 4px solid white;
+    background-color: rgb(141, 22, 78);
+    color: white;
+
+}
+  
+    </style>
+
+</head>
+<body>
+    <div id="main">
+
+        <div class="alfa-slab-one-regular" style="font-size: 40px;">CREATE CARD</div>
+
+        <form >
+            <div id="nameBox">
+                <label for="name" class="alfa-slab-one-regular">Name</label>
+                <input type="text" id="name" class="inp" >
+                </div>
+                <div id="linkBox">
+                <label for="link" class="alfa-slab-one-regular">Link</label>
+                <input type="text" id="name" class="inp" >
+                </div>
+
+                <div id="submitBox">
+                    <input type="submit" class="submit alfa-slab-one-regular" style="font-size: 15px;" >
+                </div>
+        </form>
+
+    </div>
+    <script src="addCard.js"></script>
+</body>
+</html>

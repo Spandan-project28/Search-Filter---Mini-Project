@@ -110,7 +110,7 @@
     flex-direction: row;
     justify-content:center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     
 }
 .addcard{
@@ -123,6 +123,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0px 1px 20px rgb(101, 93, 93);
+    
 
     
     
@@ -137,6 +138,7 @@
     display: flex;
     align-items: flex-end;
     box-shadow: 0px 1px 20px rgb(101, 93, 93);
+    
 
     
     
@@ -154,6 +156,7 @@ display: flex;
     flex-direction: row-reverse;
     justify-content:center;
     align-items: center;
+    
    
 }
 .cardname{
@@ -173,4 +176,8 @@ display: flex;
 ;
     
 
+}
+
+#newWindow{
+    text-decoration: none;
 }
